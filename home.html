@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowerShop Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+
+
+    <!-- css links -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+<body>
+    
+<!-- header section -->
+   <header class="fixed top-0 left-0 right-0">
+    <nav class="flex justify-between items-center p-4">
+        <div class="logo">
+            <a href="home.html"><img src="./images/logo.png" alt="logo"></a>
+        </div>
+        <div id="nav-items" class="nav-items flex-grow lg:flex lg:items-center lg:justify-center hidden">
+           <ul class="flex flex-wrap gap-4">
+            <li><a href="home.html" class="text-gray-700 hover:text-gray-900">Home</a></li>
+            <li><a href="about.html" class="text-gray-700 hover:text-gray-900">About Us</a></li>
+            <details class="dropdown">
+                <summary class="pages">Pages</summary>
+                <ul class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="profile.html">My Profile</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="billing.html">Billing</a></li>
+                  <li><a href="#">Logout</a></li>
+                  <li><a href="login.html">Login</a></li>
+                  <li><a href="register.html">Register</a></li>
+                  
+                </ul>
+              </details>
+              <li><a href="shop.html" class="text-gray-700 hover:text-gray-900">Shop</a></li>
+              <li><a href="blogs.html" class="text-gray-700 hover:text-gray-900">Blogs</a></li>
+           </ul>                
+        </div>
+        <div class="nav-icons">
+            <a class="cart" href="cart.html"><i class="ri-shopping-cart-2-fill"></i></a>
+            <a class="heart" href="wishlist.html"><i class="ri-heart-3-fill"></i></a>
+        </div>
+        <div class="toggler-item lg:hidden">
+            <button id="toggler-item" class="toggler-icon text-gray-700">
+                <i class="ri-menu-fill"></i>
+            </button>
+        </div>
+    </nav>
+   </header>
+
+   <!-- sidebar code -->
+<aside id="sidebar" class="fixed inset-y-0 left-0 bg-white w-64 transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
+    <div class="flex flex-col h-full p-4">
+        <div class="flex justify-between items-center mb-4">
+            <a href="home.html"><img class="aside-logo" src="./images/logo.png" alt="logo"></a>
+            <button id="close-sidebar" class="text-gray-700">
+                <i class="ri-close-fill"></i>
+            </button>
+        </div>
+        <hr style="color: white;">
+        <div class="sidebar-navitems p-4">
+            <ul class="space-y-4">
+                <li><a href="home.html" class="text-gray-700 hover:text-gray-900">Home</a></li>
+                <li><a href="about.html" class="text-gray-700 hover:text-gray-900">About Us</a></li>
+                <li><a href="shop.html" class="text-gray-700 hover:text-gray-900">Shop</a></li>
+                <li><a href="blogs.html" class="text-gray-700 hover:text-gray-900">Blogs</a></li>
+            </ul>
+        </div>
+        <details class="dropdown">
+            <summary class="pages">Pages</summary>
+            <ul class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="billing.html">Billing</a></li>
+                <li><a href="#">Logout</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </details>
+        <div class="sidebar-txt">
+            
+            <h1>About Us</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut amet dolore libero quos quaerat mollitia, illum cupiditate distinctio dolor.</p>
+            <button>Message Us</button>
+            <br><br>
+            <hr>
+        </div>
+        
+    </div>
+</aside>
+
+<!-- home section -->
+<section class="" style="height: 85vh;" >
+    <div class="swiffy-slider slider-nav-visible slider-nav-animation slider-nav-animation-slow" id="animatedText">
+
+        <ul class="slider-container" id="container1">
+            <li id="slide1" class="">
+                <div class="place-content-center" style="background:url('./images/bg4.webp');background-size: cover;background-repeat: no-repeat;height: 90vh;text-align: center;">
+                    <div class="slider-bg-1">
+                        <h1>Welcome</h1>
+                        <h4>Get Fresh Flowers which will lead you close to the</h4>
+                        <h2>Nature</h2>
+                        <button>Sign Up Now</button>
+                    </div>
+                </div>
+    
+            </li>
+            <li id="slide2" class="">
+                <div class="place-content-center" style="background:url('./images/bg3.jpg');background-size: cover;background-repeat: no-repeat;height: 90vh;">
+                    <div class="slider-bg-2">
+                        <button class="trendy" >Trendy</button> <br><br>
+                        <h2>Get Fav ones cards & Gifts</h2>
+                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. At facilis itaque, ut eligendi, quam molestias libero aliquam delectus nihil quis vero.</h6><br> <br>
+                        <button class="shopnow">Shop Now</button>
+                    </div>
+                </div>
+            </li>
+            <li id="slide3" class="">
+                <div class="place-content-center" style="background:url('./images/cardflower2.jpg');background-size: cover;background-repeat: no-repeat;height: 90vh;">
+                    <div class="slider-bg-3">
+                        <h1>Get indoor plants with attractive pots</h1>
+                        <h6>Make your home feel like close to the nature</h6><br><br>
+                        <button>See Blogs</button>
+                    </div>
+                </div>
+            </li>
+            
+        </ul>
+    
+        <button type="button" class="slider-nav" aria-label="Go to previous"></button>
+        <button type="button" class="slider-nav slider-nav-next" aria-label="Go to next"></button>
+    
+        <div class="slider-indicators">
+            <button aria-label="Go to slide" class=""></button>
+            <button aria-label="Go to slide" class="active"></button>
+            <button aria-label="Go to slide" class=""></button>
+        </div>
+    </div>
+</section>
+
+<!-- home discount section -->
+<section class="dis-sec">
+    <div class="discount-cards">
+        <div class="rose" style="background: url('./images/redrorebq.jpg'); background-size: cover;background-repeat: no-repeat;width:22rem;height: 18rem;">
+            <div class="rose-bg">
+                  <h3>BIG RED ROSE</h3>
+                  <h1>40% OFF</h1>
+            </div>
+        </div>
+        <div class="rose" style="background: url('./images/pasteltulips.jpg'); background-size: cover;background-repeat: no-repeat;width:22rem;height: 18rem;">
+            <div class="tulip">
+                  <h1>GET TULIPS</h1>
+                  <h3>25% OFF</h3>
+            </div>
+        </div>
+        <div class="rose" style="background: url('./images/nightqueen.webp'); background-size: cover;background-repeat: no-repeat;width:22rem;height: 18rem;">
+            <div class="rose-bg">
+                  <h3>GET NIGHTQUEENS</h3>
+                  <h1>20% OFF</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- presenting section -->
+<section class="presenting">
+    <h1>WE ARE PRESENTING YOU</h1>
+    <div class="birthday-sec">
+        <div class="bd-text">
+            <h5>Flower for the</h5>
+            <h2>BIRTHDAY & GIFTS</h2>
+            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eos, dolorem quam expedita quas nemo corrupti repellat in porro accusantium voluptatem voluptatum eligendi.</h6><br><br>
+            <button>Shop Collection</button>
+        </div>
+        <div class="bd-im" >
+            <div class="im-sec">
+                <img src="./images/birthday.jpg" alt="">
+            </div>
+            
+        </div>
+    </div>
+    <div class="birthday-sec">
+        <div class="bd-im" >
+            <div class="im-sec">
+                <img src="./images/wedding2.jpg" alt="">
+            </div>
+        </div>
+        <div class="bd-text">
+            <h5>Flower for the</h5>
+            <h2>WEDDING CEREMONY</h2>
+            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eos, dolorem quam expedita quas nemo corrupti repellat in porro accusantium voluptatem voluptatum eligendi.</h6><br><br>
+            <button>Shop Collection</button>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- best sale -->
+<section class="best-sale">
+    <h1>Our Best Selling Product</h1>
+      <div class="best-sec">
+        <div class="vertical-line">
+            <i class="ri-circle-fill"></i>
+            <hr class="vertical">
+        </div>
+        <div class="product-1-sec">
+            <div class="product-1">
+                <img src="./images/cardflower.jpg" alt="">
+                <div class="img-txt">
+                    <h5>Price- $200 Only</h5>
+                </div>
+            </div>
+            <div class="product-1-btn">
+                <a href="shop.html">See Details</a>
+            </div>
+        </div>
+        <div class="product-2">
+            <div class="product-1">
+                <img src="./images/wlily2.jpg" alt="">
+                <div class="img-txt-2">
+                    <h5>Price- $200 Only</h5>
+                </div>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<!-- What we are selling section -->
+<!-- <section class="selling">
+    <div class="selling-sec ">
+        <div class="vase">
+            <img src="./images/vase.jpg" alt="">
+        </div>
+        <div class="more-4 ">
+            <div class="more-2 ">
+                <div class="fertilizer">
+                    <img src="./images/fertilizers.jpeg" alt="">
+                </div>
+                <div class="bq-rose">
+                     <img src="./images/bouquetrose.jpg" alt="">
+                </div>
+            </div>
+            <div class="more-2 ">
+                <div class="potted">
+                     <img src="./images/potted.jpg" alt="">
+                </div>
+                <div class="indoor">
+                     <img src="./images/indoor.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  -->
+
+<!-- review section -->
+<section class="review-sec">
+    <h1>We love to hear our customers</h1>
+    <h2>Let's see what are they saying</h2><br><br>
+
+    <div class="swiffy-slider slider-item-show2 slider-nav-sm slider-nav-page slider-item-snapstart slider-item-nogap slider-nav-round slider-nav-dark slider-indicators-sm slider-indicators-outside slider-indicators-round slider-indicators-dark slider-nav-animation slider-nav-animation-slideup slider-item-first-visible">
+        <div class="slider-container">
+            <div class="review p-3 p-xl-5 slide-visible" >
+                <img src="./images/reviewer.jpg" alt="reviewer">
+                <p>
+                    I'm baby edison bulb etsy franzen fixie messenger bag ugh hell of farm-to-table brunch. Tumeric hashtag meh pabst organic next level meggings whatever hella listicle.
+                </p>
+                <button class="btn btn-outline-light">Read more</button>
+            </div>
+            <div class="review p-3 p-xl-5  slide-visible" >
+                <img src="./images/reviewer.jpg" alt="reviewer">
+                <p>
+                    Hoodie iceland literally slow-carb kombucha kickstarter cloud bread irony aesthetic wayfarers prism kinfolk occupy pok pok lo-fi. Letterpress crucifix distillery bespoke austin coloring book photo booth 8-bit.
+                </p>
+                <button class="btn btn-outline-light">Read more</button>
+            </div>
+            <div class="review p-3 p-xl-5 " >
+                <img src="./images/reviewer.jpg" alt="reviewer">
+                <p>
+                    Gochujang edison bulb church-key gentrify you probably haven't heard of them, artisan selfies. Live-edge tousled wolf cronut shaman.
+                </p>
+                <button class="btn btn-outline-light">Read more</button>
+            </div>
+            <div class="review p-3 p-xl-5 " >
+                <img src="./images/reviewer.jpg" alt="reviewer">
+                <p>
+                    I'm baby edison bulb etsy franzen fixie messenger bag ugh hell of farm-to-table brunch. Tumeric hashtag meh pabst organic next level meggings whatever hella listicle.
+                </p>
+                <button class="btn btn-outline-light">Read more</button>
+            </div>
+            
+            
+        </div>
+    
+        <button type="button" class="slider-nav" aria-label="Go left"></button>
+        <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
+    
+        <div class="slider-indicators d-md-none">
+            <button class="active" aria-label="Go to slide"></button>
+            <button aria-label="Go to slide"></button>
+            <button aria-label="Go to slide"></button>
+            <button aria-label="Go to slide"></button>
+            <button aria-label="Go to slide"></button>
+            <button aria-label="Go to slide"></button>
+        </div>
+    </div>
+</section>
+
+<!-- associated brands -->
+<div class="swiffy-slider slider-item-show4 slider-nav-outside slider-nav-dark slider-nav-sm slider-nav-visible slider-nav-page slider-item-snapstart slider-nav-autoplay slider-nav-autopause slider-item-ratio slider-item-ratio-contain slider-item-ratio-32x9 bg-white shadow-lg py-3 py-lg-4" data-slider-nav-autoplay-interval="2000">
+    <div class="slider-container">
+        <div><img src="./images/1.png" alt="..."></div>
+        <div><img src="./images/8.jpg" loading="lazy" alt="..."></div>
+        <div><img src="./images/2.png" loading="lazy" alt="..."></div>
+        <div><img src="./images/7.jpg" loading="lazy" alt="..."></div>
+        <div><img src="./images/3.png" loading="lazy" alt="..."></div>
+        <div><img src="./images/6.jpg" loading="lazy" alt="..."></div>
+        <div><img src="./images/4.png" loading="lazy" alt="..."></div>
+        <div><img src="./images/5.png" loading="lazy" alt="..."></div>
+    </div>
+
+    <button type="button" class="slider-nav" aria-label="Go left"></button>
+    <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
+
+</div>
+
+
+<!-- footer -->
+<footer>
+    <div class="footer-contents ">
+        <div class="footer-logo">
+            <div class="foter-logo-img">
+                <a href="home.html"><img src="./images/logo.png" alt="logo"></a>
+            </div>
+            
+            
+              <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit odit neque tempore ratione </h6>
+            <div class="footer-icons p-4">
+                <a class="hover:scale-125"  href="#"><i class="ri-facebook-fill"></i></a>
+                <a  href="#"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-twitter-line"></i></a>
+                <a href="#"><i class="ri-linkedin-fill"></i></a>
+                <a href="#"><i class="ri-youtube-line"></i></a>   
+            </div>
+        </div>
+        <div class="info">
+            <h4>Information</h4>
+            <ul>
+                <a href="shop.html"><li>Our Shop</li></a>
+                <a href="contact.html"><li>Contact Us</li></a>
+                <a href="about.html"><li>Why we?</li></a>
+                <a href="about.html"><li>Our Services</li></a>
+                
+            </ul>
+        </div>
+        <div class="quick-link">
+            <h4>Quicklinks</h4>
+            <ul>
+                <a href="shop.html"><li>Shop</li></a>
+                <a href="about.html"><li>About Us</li></a>
+                <a href="blogs.html"><li>Blogs</li></a>
+                <a href="home.html"><li>Home</li></a>
+                
+            </ul>
+        </div>
+        
+        <div class="visit-us">
+            <h4>Reach Us</h4>
+            <ul>
+            <li><i class="ri-home-heart-line"></i> House-55,Road-23,Sector-5,Uttara,Dhaka,Bangldesh</li>
+            <li><i class="ri-phone-line"></i> +880-1235679555</li>
+            <li><i class="ri-mail-line"></i> bluebelia@shop.com</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <p><i class="ri-copyright-line"></i> reserved by <i class="ri-at-line"></i>Bluebelia Floer Shop <i class="ri-arrow-right-wide-line"></i> Designed by Samia</p>
+    </div>
+</footer>
+
+ <!-- script tags -->
+ <script src="./js/script.js"></script>
+</body>
+</html>

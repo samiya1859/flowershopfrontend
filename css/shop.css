@@ -1,0 +1,53 @@
+:root{
+    --cursive: "Italianno", cursive;
+    --rosyfont:#7f1621
+
+}
+.shop{
+    height: 50vh;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+.shop h1{
+    font-size: 45px;
+    font-family: cursive;
+    font-weight: bolder;
+    color: rgb(50, 37, 37);
+    
+}
+.shop span{
+    font-size: 30px;
+    font-family: var(--cursive);
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: rgb(50, 37, 37);
+}
+
+/* shop content design */
+.shop-contents{
+    padding: 50px;
+}
+.cats{
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+}
+.cats a{
+    padding: 6px 11px;
+    border: 1px solid brown;
+    border-radius: 10px;
+    transition: all .4s ease;
+}
+.cats a:hover{
+    background: var(--rosyfont);
+    color: white;
+    letter-spacing: 2px;
+}
+
+.card-actions button{
+    padding: 8px 15px;
+    background: var(--rosyfont);
+    border-radius: 8px;
+    color: white;
+}

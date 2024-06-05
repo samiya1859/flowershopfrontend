@@ -1,0 +1,419 @@
+/* home content design */
+:root{
+    --cursive: "Italianno", cursive;
+    --rosyfont:#7f1621
+
+}
+.slider-bg-1 h1{
+    font-size: 95px;
+    font-family: var(--cursive);
+    font-weight: bolder;
+    color: var(--rosyfont);
+    animation-name: comingDown;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+.slider-bg-1 h4{
+    font-size: 20px;
+    font-family: cursive;
+    animation-name: comingDown;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+.slider-bg-1 h2{
+    font-size: 35px;
+    font-family: var(--cursive);
+    font-weight: bold;
+    color: var(--rosyfont);
+    animation-name: comingDown;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+.slider-bg-1 button{
+    background:#ac454f ;
+    padding: 8px 13px;
+    color: white;
+    font-size: 20px;
+    font-family: cursive;
+    border-radius: 10px;
+    border: 2px solid var(--rosyfont);
+    animation-name: scalingbutton;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/* animation part */
+@keyframes comingDown{
+    0%{
+        transform: translateY(-70px);
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes comingUp{
+    0%{
+        transform: translateY(90px);
+        opacity: 0.4;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes fadetovisible{
+    0%{
+        transform: scale(0.5);
+        opacity: 0.3;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes scalingbutton {
+    0%{
+        transform: scale(.8);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(0.8);
+    }
+}
+@keyframes zoomin{
+    0%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+/* slider two */
+.slider-bg-2{
+    padding: 55px;
+    width: 55%;
+}
+.slider-bg-2 h2{
+    font-size: 35px;
+    font-family: var(--cursive);
+    font-weight: bold;
+    color: var(--rosyfont);
+    letter-spacing: 3px;
+    animation-name: fadetovisible;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+}
+.slider-bg-2 h6{
+    color: rgb(62, 61, 61);
+    font-family: cursive;
+    animation-name: fadetovisible;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+}
+.trendy{
+    padding: 6px 9px;
+    background:#ac454f ;
+    font-family: cursive;
+    color: white;
+    border-radius: 5px;
+    animation-name: comingDown;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+}
+.shopnow{
+    background:rgb(38, 37, 37) ;
+    padding: 8px 13px;
+    color: white;
+    font-size: 20px;
+    font-family: cursive;
+    border-radius: 10px;
+    animation-name: comingUp;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+}
+
+/* slider 3 */
+.slider-bg-3{
+    padding: 55px;
+    width: 55%;
+}
+.slider-bg-3 h1{
+    font-size: 48px;
+    letter-spacing: 2px;
+    font-family: var(--cursive);
+    font-weight: bolder;
+    color: var(--rosyfont);
+    animation-name: comingDown;
+    animation-duration: 3s;
+    animation-iteration-count: 4;
+}
+.slider-bg-3 h6{
+    color: rgb(62, 61, 61);
+    font-family: cursive;
+    animation-name: comingDown;
+    animation-duration: 3s;
+    animation-iteration-count: 4;
+}
+.slider-bg-3 button{
+    background:rgb(38, 37, 37) ;
+    padding: 8px 13px;
+    color: white;
+    font-size: 20px;
+    font-family: cursive;
+    border-radius: 10px;
+    animation-name: comingUp;
+    animation-duration: 3s;
+    animation-iteration-count: 4;
+}
+
+/* home discount section */
+.dis-sec{
+    padding: 50px;
+}
+.discount-cards{
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rose-bg{
+    background: rgba(46, 44, 44, 0.5);
+    height: 18rem;
+    align-content: center;
+    justify-content: center;
+    transition: all .4s ease;
+}
+.rose-bg:hover{
+    transform: scale(0.7);
+}
+.rose-bg h1{
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.rose-bg h3{
+    font-size: 28px;
+    letter-spacing: 3px;
+    color: white;
+    text-align: center;
+}
+.tulip{
+    background: rgba(126, 113, 113, 0.2);
+    height: 18rem;
+    align-content: center;
+    justify-content: center; 
+    transition: all .4s ease;
+}
+.tulip:hover{
+    transform: scale(0.7);
+}
+.tulip h1{
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.tulip h3{
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+
+/* presenting section design */
+.presenting{
+    padding: 50px;
+    background: rgba(238, 235, 235, 0.6);
+}
+.presenting h1{
+    font-size: 40px;
+    font-family: var(--cursive);
+    color: #ac454f;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.birthday-sec{
+    padding-top: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;   
+}
+.bd-text{
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+.bd-text h5{
+    font-size: 20px;
+    font-family: var(--cursive);
+    color: #ac454f;
+    text-align: center;  
+}
+.bd-text h2{
+    font-size: 29px;
+    font-family: cursive;
+    color:black;
+    text-align: center;  
+}
+.bd-text button{
+    padding: 9px 13px;
+    background: black;
+    color: white;
+}
+.bd-im{
+    width: 50%;
+}
+.im-sec{
+    width: 35rem;
+    display: inline-block;
+    border: 1px solid black;
+}
+.im-sec img{
+    width: 35rem;
+    transition: all .4s ease;
+    display: block;
+    transition: transform .4s;
+}
+/* .im-sec:hover img{
+    transform: scale(1.2);
+    transform-origin: 50% 50%;
+} */
+
+/* best sale sec */
+
+.best-sale{
+padding: 50px;
+}
+.best-sale h1{
+    font-size: 40px;
+    font-family: var(--cursive);
+    color: #ac454f;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.best-sec{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.vertical-line{
+    gap:0px;
+}
+.vertical-line i{
+    color: #ac454f;
+}
+.vertical{
+    width: 2px; /* Line width */
+    height: 370px; /* Line height */
+    background-color: #ac454f; /* Line color */
+    margin: 0 10px;
+}
+.product-1 {
+    position: relative;
+    width: 300px; 
+    border: 1px solid #47161b;
+    border-radius: 15px;
+    box-shadow: 1px 1px #ac454f;
+    overflow: hidden;
+}
+.product-2{
+    padding-top: 70px;
+}
+
+.product-1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+
+.img-txt {
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background-color: rgba(226, 90, 129,.5); /* Black background with 50% opacity */
+    color: white; /* Text color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px; /* Adjust text size as needed */
+}
+.product-1-btn{
+    padding: 20px;
+}
+.product-1-btn a{
+    padding: 10px 80px;
+    background: transparent;
+    border: 1px solid #47161b;
+    border-radius: 15px;
+    color: #47161b;
+    font-size: 18px;
+    font-family: cursive;
+    transition: all .4s ease;
+}
+.product-1-btn a:hover{
+    background-color: rgba(226, 90, 129,.5);
+}
+
+.img-txt-2{
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background-color: rgba(154, 194, 227,.5); /* Black background with 50% opacity */
+    color: white; /* Text color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px; /
+}
+
+
+/* review section */
+.review-sec{
+    padding: 50px;
+}
+.review-sec h1{
+    font-size: 40px;
+    font-family: var(--cursive);
+    color: #ac454f;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.review-sec h2{
+    font-size: 30px;
+    font-family: cursive;
+    color: #522328;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.review{
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+.review img{
+width: 100px;
+height: 100px;
+border-radius: 50%;
+display: inline;
+}
