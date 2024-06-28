@@ -276,20 +276,26 @@
     width: 50%;
 }
 .im-sec{
-    width: 35rem;
-    display: inline-block;
+    /* width: 35rem;
+    display: inline-block; */
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
     border: 1px solid black;
 }
 .im-sec img{
-    width: 35rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    cursor: pointer;
     transition: all .4s ease;
-    display: block;
-    transition: transform .4s;
+    /* display: block; */
 }
-/* .im-sec:hover img{
+.bd-im:hover .im-sec img{
     transform: scale(1.2);
     transform-origin: 50% 50%;
-} */
+}
 
 /* best sale sec */
 

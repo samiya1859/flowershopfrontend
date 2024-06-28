@@ -39,3 +39,54 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #45a049;
 }
+
+
+/* whomreg design */
+
+.regi-section {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-content: center;
+    justify-content: space-between;
+    padding: 30px; 
+}
+
+.join-as {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start; /* Align text divs to the left */
+    gap: 20px;
+    padding: 40px; 
+    width: 50%;
+    
+}
+
+.join-as div {
+    width: 18rem;
+    height: 10rem;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+}
+.join-as div h1{
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: gray;
+}
+.join-as div:hover{
+    box-shadow: 2px 2px  rgb(184, 182, 182);
+}
+.join-img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align the image to the right */
+    width: 50%;
+}
+
+.join-img img {
+    width: 55%;
+    display: inline;
+}
+

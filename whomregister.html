@@ -19,9 +19,7 @@
 
     <!-- css links -->
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/shop.css">
     <link rel="stylesheet" href="./css/loginreg.css">
-    
 </head>
 <body>
     
@@ -38,13 +36,13 @@
             <details class="dropdown">
                 <summary class="pages">Pages</summary>
                 <ul class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-                  <li><a href="contact.html">Contact</a></li>
-                  <li><a href="profile.html">My Profile</a></li>
-                  <li><a href="faq.html">FAQ</a></li>
-                  <li><a href="billing.html">Billing</a></li>
-                  <li><a href="#">Logout</a></li>
-                  <li><a href="login.html">Login</a></li>
-                  <li><a href="register.html">Register</a></li>
+                  <li><a id="contact" href="contact.html">Contact</a></li>
+                  <li><a id="profile" href="profile.html">My Profile</a></li>
+                  <li><a id="faq" href="faq.html">FAQ</a></li>
+                  <li><a id="bills" href="billing.html">Billing</a></li>
+                  <li><a id="logout" href="#">Logout</a></li>
+                  <li><a id="login" href="login.html">Login</a></li>
+                  <li><a id="register" href="register.html">Register</a></li>
                   
                 </ul>
               </details>
@@ -65,7 +63,7 @@
    </header>
 
    <!-- sidebar code -->
-<aside id="sidebar" class="fixed inset-y-0 left-0 bg-white w-64 transform -translate-x-full transition-transform duration-300 ease-in-out z-20">
+<aside id="sidebar" class="fixed inset-y-0 left-0 bg-white w-64 transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
     <div class="flex flex-col h-full p-4">
         <div class="flex justify-between items-center mb-4">
             <a href="home.html"><img class="aside-logo" src="./images/logo.png" alt="logo"></a>
@@ -106,31 +104,63 @@
     </div>
 </aside>
 
-<!-- register home section -->
-<section class="shop-home" style="height:auto;background: url('./images/pasteltulips.jpg'); background-size: cover; background-repeat: no-repeat;text-align:center;align-content: center;justify-content: center;">
-      
-    <div class="shop">
-     <h1>Welcome to our beloved flower shop</h1>
-     <span>Sign Up fast to grab out new products</span>
-    </div>
-</section>
 
-<!-- form section -->
-<section>
-    
-    <div class="container">
-        <h1>Create an account</h1><br><br>
-        <form action="#">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <input type="password" name="confirm_password" placeholder="Confirm Password" required>
-            
-            <input type="submit" value="Register">
-            <br><br><span>Already have an account? <a href="login.html">login here</a></span>
+<!-- joining section -->
+<section style="align-content: center; justify-content: center; padding-top: 40px;">
+    <div class="regi-section">
+        <div class="join-as">
+            <div class="join-option" onclick="showForm('customer')" style="background: url('./images/join1.jpg'); background-size: cover;background-repeat: no-repeat;">
+                <h3>Sign Up as a</h3>
+                <h1>Customer <a href="#"><i class="ri-arrow-right-line"></i></a></h1>
+            </div>
+            <div class="join-option" onclick="showForm('seller')" style="background: url('./images/join2.jpg'); background-size: cover;background-repeat: no-repeat;">
+                <h3>Sign Up as a</h3>
+                <h1>Seller <a href="#"><i class="ri-arrow-right-line"></i></a></h1>
+            </div>
+        </div>
+        <div class="join-img">
+            <img src="./images/Plant-Sale.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="form-section" id="customer-form" style="display: none;">
+        <!-- Customer Registration Form -->
+        <h2>Customer Registration</h2>
+        <form onsubmit="handleRegistrationForCustomer(event)">
+            <input type="text" id="customer-username" placeholder="Username" required>
+            <input type="text" id="customer-firstname" placeholder="First Name" required>
+            <input type="text" id="customer-lastname" placeholder="Last Name" required>
+            <input type="email" id="customer-email" placeholder="Email" required>
+            <input type="text" id="customer-phone" placeholder="Phone" required>
+            <input type="text" id="customer-address" placeholder="Address" required>
+            <input type="password" id="customer-password" placeholder="Password" required>
+            <input type="password" id="customer-confirm-password" placeholder="Confirm Password" required>
+            <button type="submit">Register</button>
         </form>
     </div>
+
+    <div class="form-section" id="seller-form" style="display: none;">
+        <!-- Seller Registration Form -->
+        <h2>Seller Registration</h2>
+        <form onsubmit="handleRegistrationForSeller(event)">
+            <input type="text" id="seller-username" placeholder="Username" required>
+            <input type="text" id="seller-firstname" placeholder="First Name" required>
+            <input type="text" id="seller-lastname" placeholder="Last Name" required>
+            <input type="email" id="seller-email" placeholder="Email" required>
+            <input type="text" id="seller-phone" placeholder="Phone" required>
+            <input type="text" id="seller-address" placeholder="Address" required>
+            <input type="text" id="seller-shop-name" placeholder="Shop Name" required>
+            <input type="password" id="seller-password" placeholder="Password" required>
+            <input type="password" id="seller-confirm-password" placeholder="Confirm Password" required>
+            <button type="submit">Register</button>
+        </form>/*
+        </div>  
+
+
+
 </section>
+
+
 
 <!-- associated brands -->
 <div class="swiffy-slider slider-item-show4 slider-nav-outside slider-nav-dark slider-nav-sm slider-nav-visible slider-nav-page slider-item-snapstart slider-nav-autoplay slider-nav-autopause slider-item-ratio slider-item-ratio-contain slider-item-ratio-32x9 bg-white shadow-lg py-3 py-lg-4" data-slider-nav-autoplay-interval="2000">

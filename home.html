@@ -36,13 +36,13 @@
             <details class="dropdown">
                 <summary class="pages">Pages</summary>
                 <ul class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-                  <li><a href="contact.html">Contact</a></li>
-                  <li><a href="profile.html">My Profile</a></li>
-                  <li><a href="faq.html">FAQ</a></li>
-                  <li><a href="billing.html">Billing</a></li>
-                  <li><a href="#">Logout</a></li>
-                  <li><a href="login.html">Login</a></li>
-                  <li><a href="register.html">Register</a></li>
+                  <li><a id="contact" href="contact.html">Contact</a></li>
+                  <li><a id="profile" href="profile.html">My Profile</a></li>
+                  <li><a id="faq" href="faq.html">FAQ</a></li>
+                  <li><a id="bills" href="billing.html">Billing</a></li>
+                  <li><a id="logout" onclick="handlelogOut()" href="#">Logout</a></li>
+                  <li><a id="login" href="login.html">Login</a></li>
+                  <li><a id="register" href="whomregister.html">Register</a></li>
                   
                 </ul>
               </details>
@@ -87,9 +87,9 @@
                 <li><a href="profile.html">My Profile</a></li>
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="billing.html">Billing</a></li>
-                <li><a href="#">Logout</a></li>
+                <li><a href="#" onclick="handlelogOut()">Logout</a></li>
                 <li><a href="login.html">Login</a></li>
-                <li><a href="register.html">Register</a></li>
+                <li><a href="whomregister.html">Register</a></li>
             </ul>
         </details>
         <div class="sidebar-txt">
@@ -243,32 +243,6 @@
 </section>
 
 
-<!-- What we are selling section -->
-<!-- <section class="selling">
-    <div class="selling-sec ">
-        <div class="vase">
-            <img src="./images/vase.jpg" alt="">
-        </div>
-        <div class="more-4 ">
-            <div class="more-2 ">
-                <div class="fertilizer">
-                    <img src="./images/fertilizers.jpeg" alt="">
-                </div>
-                <div class="bq-rose">
-                     <img src="./images/bouquetrose.jpg" alt="">
-                </div>
-            </div>
-            <div class="more-2 ">
-                <div class="potted">
-                     <img src="./images/potted.jpg" alt="">
-                </div>
-                <div class="indoor">
-                     <img src="./images/indoor.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>  -->
 
 <!-- review section -->
 <section class="review-sec">

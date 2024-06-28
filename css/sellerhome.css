@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --cursive: "Italianno", cursive;
+    --rosyfont:#7f1621
+
+}
+.pro-info{
+    background: url("../images/pasteltulips.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95vh;
+    text-align: center;
+    padding: 20px;
+    align-content: center;
+    justify-content: center;
+    padding-left: 30px;
+}
+.info-container{
+    background: rgba(212, 117, 151,0.4);
+    height: 88vh;
+    padding: 30px;
+    text-align: center; 
+}
+.logo img{
+    width: 80%;
+}
+.infos{
+    padding: 20px;
+    padding-top: 30px;
+}
+.infos h1{
+    font-family: var(--cursive);
+    font-weight: 700;
+}
+.infos h5{
+    font-family: cursive;
+}
+.info-btn a{
+padding: 8px 15px;
+border: 1px solid white;
+background: rgba(212, 117, 151,0.6);
+color: white;
+}
+
+.search{
+    gap: 0;
+}
+.search input{
+    padding: 6px 20px;
+    border: none;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 5px  gray;
+}
+.search button{
+    padding: 6px;
+    background: transparent;
+    border: none;
+    font-size: 22px;
+}
+.icons{
+    font-size: 22px;
+}
+.icons a{
+    text-decoration: none;
+}
+.icons a i{
+    color: black;
+}
+.col-md-9{
+    padding: 10px;
+}
+.col-md-9 nav{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.all-cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content:space-around ;
+    padding: 20px;
+}
+.card{
+    width: 15rem;
+}
+.card-body{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.card i{
+    font-size: 40px;
+}
+.one{
+    background:rgba(231, 138, 171, 0.4) ;
+}
+.two{
+    background: rgba(182, 208, 241, 0.4);
+}
+.table-container{
+    background: rgb(226, 220, 220);
+}
